@@ -1,6 +1,11 @@
 function display5 () {
     led.plotBrightness(2, 2, 0)
 }
+input.onButtonPressed(Button.A, function () {
+    if (wait < 500) {
+        wait += 50
+    }
+})
 function display4 () {
     led.plotBrightness(1, 1, 0)
     led.plotBrightness(3, 1, 0)
@@ -24,12 +29,19 @@ function display2 () {
     led.plotBrightness(3, 1, 255)
     led.plotBrightness(2, 3, 255)
 }
+input.onButtonPressed(Button.B, function () {
+    if (wait > 0) {
+        wait += -50
+    }
+})
 function display1 () {
     led.plotBrightness(0, 0, 255)
     led.plotBrightness(4, 0, 255)
     led.plotBrightness(2, 4, 255)
 }
+let wait = 0
 let pattern = 0
+wait = 300
 basic.forever(function () {
     if (pattern == 0) {
         display1()
@@ -44,5 +56,5 @@ basic.forever(function () {
         pattern = -1
     }
     pattern += 1
-    basic.pause(300)
+    basic.pause(wait)
 })
