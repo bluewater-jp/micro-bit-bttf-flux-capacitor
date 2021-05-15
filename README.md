@@ -23,7 +23,7 @@ MakeCode でこのリポジトリを編集します。
 この画像はマスタ内の最後のコミットからのブロックコードを示しています。
 このイメージは更新に数分かかる場合があります。
 
-![生成されたブロック](https://github.com/bluewater-jp/micro-bit-bttf-flux-capacitor/main/.github/makecode/blocks.png)
+![生成されたブロック](https://github.com/bluewater-jp/micro-bit-bttf-flux-capacitor/raw/main/.github/makecode/blocks.png)
 
 #### メタデータ (検索、レンダリングに使用)
 
